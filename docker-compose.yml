@@ -1,0 +1,13 @@
+services:
+  health-importer:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - cache:/cache
+    env_file:
+      - envvars.local
+    restart: unless-stopped
+
+volumes:
+  cache:

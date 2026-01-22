@@ -1,0 +1,26 @@
+TZ=America/Los_Angeles
+LOG_LEVEL=INFO
+
+# InfluxDB
+INFLUXDB_HOST=influxdb
+INFLUXDB_PORT=8086
+INFLUXDB_USER=health_user
+INFLUXDB_PASS=changeme
+INFLUXDB_DB=health
+
+# Feature toggles
+ENABLE_OURA_POLLER=True
+ENABLE_OPENSCALE_POLLER=True
+
+# Oura Ring (required if ENABLE_OURA_POLLER=True)
+OURA_CLIENT_ID=your_client_id
+OURA_CLIENT_SECRET=your_client_secret
+REDIRECT_URI=http://localhost:8080/
+TOKEN_FILE=/cache/tokens
+HTTP_PORT=8080
+STARTUP_LOOKBACK=7
+
+# OpenScale (required if ENABLE_OPENSCALE_POLLER=True)
+OPENSCALE_MQTT_HOST=mqtt.local
+OPENSCALE_MQTT_PORT=1883
+OPENSCALE_MQTT_TOPIC=openScaleSync

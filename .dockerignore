@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.*.swp
+.git/
+.gitignore
+tokens
+envvars
+envvars.local
+*.md
+.vscode/
