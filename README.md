@@ -117,3 +117,7 @@ Data is written to the following InfluxDB measurements:
 
 **OpenScale:**
 - `scale_metrics` - Weight and body composition data
+
+## Grafana Dashboard
+
+A sample Grafana dashboard configuration is included in `extra/grafana_dashboard.json`. Import it into your Grafana instance to visualize the collected health metrics.
